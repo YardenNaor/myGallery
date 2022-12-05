@@ -50,7 +50,7 @@ function renderModal(projId) {
   const proj = getProjById(projId)
   console.log('proj:', proj)
 
-  const strHtml = ` <h2>${proj.name}</h2>
+  const strHtml = `<h2>${proj.name}</h2>
   <p class="item-intro text-muted">${proj.title}</p>
  <img class="img-fluid d-block mx-auto" src="img/portfolio/${projId}.jpg" >
  <p>${proj.desc}</p>
