@@ -98,9 +98,10 @@ body {
 }
 
 .offcanvas-aside {
+    
     position: fixed;
     height: 100%;
-    background: red;
+    background: rgb(210, 216, 203);
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -109,6 +110,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.offcanvas-aside h4{
+    text-align: center;
 }
 
 .offcanvas-aside img {
