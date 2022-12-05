@@ -9,7 +9,7 @@ console.log('progs:',gProjs)
 createProjs()
 
 function createProjs() {
-_createProj ('Minesweeper','Minesweeper','the old game in a new look and special modifications',
+_createProj ('minesweeper','Minesweeper','the old game in a new look and special modifications',
 'https://yardennaor.github.io/mine-sweeper/',1670244443490,['matrixes','keyboard events'])
 _createProj ('sokoban','Sokoban','Better push those boxes','lorem ipsum lorem ipsum lorem ipsum',
 'projs/sokoban',1448693940000,['Matrixes', 'keyboard events'])

@@ -1,5 +1,7 @@
-(function($) {
-  "use strict"; // Start of use strict
+// (function($) {
+  "use strict" // Start of use strict
+
+  $(onInit)
 
 function onInit(){
   renderProjs()
@@ -8,7 +10,7 @@ function onInit(){
 
  function renderProjs(){
   const projs= getProjs()
-
+console.log('projs at render:',projs)
   var strHtmls= projs.map(proj=> `
   <div class="col-md-4 col-sm-6 portfolio-item">
     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -17,15 +19,20 @@ function onInit(){
           <i class="fa fa-plus fa-3x"></i>
         </div>
       </div>
-      <img class="img-fluid" src="img/portfolio/${proj.id}">
+      <img class="img-fluid" src="img/portfolio/${proj.id}.jpg">
     </a>
     <div class="portfolio-caption">
-      <h4>${proj.name}</h4>
-      <p class="text-muted">${proj.tlte}</p>
+    <h4>${proj.name}</h4>
+    <p class="text-muted">${proj.tlte}</p>
     </div>
-  </div>`
-  )
- $('.rows').html(strHtmls)
+    </div>`
+  //  console.log('id:',`img/portfolio/${proj.id}`)
+)
+  // console.log('str:',strHtmls)
+  // document.querySelector('.row portfolios').innerHTML(strHtmls.join(''))
+ $('.portfolios').html(strHtmls)
+
+//
  }
 
 
@@ -63,4 +70,4 @@ function onInit(){
     }
   });
 
-})(jQuery); // End of use strict
+// })(jQuery); // End of use strict
