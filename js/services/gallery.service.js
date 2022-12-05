@@ -49,3 +49,7 @@ function _createProj (id,name,title,desc,url,publishedAt,labels) {
 function getProjs(){
     return gProjs
 }
+
+function getProjById(projId){
+    return gProjs.find(proj=>proj.id===projId)
+} 
