@@ -73,7 +73,13 @@ function onCloseModal(){
   $('.modal-container').removeClass('open')
 }
 
-
+function onSubmission(){
+  console.log('hi:')
+  $elUserEmail= $('.email').val()
+  $elSobject= $('.subject').val()
+  $elMessage= $('.message').val()
+  console.log('email,sobject,message:',$elUserEmail,$elSobject,$elMessage)
+}
 
 // Smooth scrolling using jQuery easing
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
