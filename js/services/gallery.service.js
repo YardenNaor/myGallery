@@ -9,14 +9,18 @@ console.log('progs:',gProjs)
 createProjs()
 
 function createProjs() {
-_createProj ('minesweeper','Minesweeper','the old game in a new look and special modifications',null,
-'https://yardennaor.github.io/mine-sweeper/',1670244443490,['matrixes','keyboard events'])
-_createProj ('sokoban','Sokoban','Better push those boxes','lorem ipsum lorem ipsum lorem ipsum',
-'projs/sokoban',1448693940000,['Matrixes', 'keyboard events'])
-
-console.log('progs:',gProjs)
-}
-
+    _createProj ('minesweeper','Minesweeper','the old game in a new look and special modifications',null,
+    'https://yardennaor.github.io/mine-sweeper/',1670244443490,['matrixes','keyboard events'])
+    // _createProj ('sokoban','Sokoban','Better push those boxes','lorem ipsum lorem ipsum lorem ipsum',
+    // 'projs/sokoban',1448693940000,['Matrixes', 'keyboard events'])
+    _createProj('todos','Todos')
+    _createProj('pacman','Pacman')
+    _createProj('touch-nums','Touch-nums')
+    _createProj('in-picture','In-picture')
+    _createProj('ball-board','Ball-board')
+    _createProj('book-shop','book-shop')
+    console.log('progs:',gProjs)
+    }
 
 
 
